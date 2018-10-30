@@ -13,7 +13,7 @@ namespace RealWorldApp
     public partial class PantallaInicio : Form
     {
         private GifImage gifImage = null;
-        private string filePath = @"C:\Users\b14-09m\Documents\Visual Studio 2015\Projects\matrix2.gif";
+        private string filePath = @"C:\Users\rosal\Documents\Visual Studio 2015\Repos\RealWorld\RealWorldApp\RealWorldApp\matrix.gif";
         public PantallaInicio()
         {
             InitializeComponent();
@@ -25,6 +25,17 @@ namespace RealWorldApp
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+            Tablero tablero = new RealWorldApp.Tablero();
+            tablero.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
