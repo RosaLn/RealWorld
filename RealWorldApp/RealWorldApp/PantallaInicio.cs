@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace RealWorldApp
 {
-    public partial class Form1 : Form
+    public partial class PantallaInicio : Form
     {
         private GifImage gifImage = null;
         private string filePath = @"C:\Users\b14-09m\Documents\Visual Studio 2015\Projects\matrix2.gif";
-        public Form1()
+        public PantallaInicio()
         {
             InitializeComponent();
             gifImage = new GifImage(filePath);
