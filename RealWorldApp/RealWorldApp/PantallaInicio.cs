@@ -13,7 +13,7 @@ namespace RealWorldApp
     public partial class PantallaInicio : Form
     {
         private GifImage gifImage = null;
-        private string filePath = @"C:\Users\rosal\Documents\Visual Studio 2015\Repos\RealWorld\RealWorldApp\RealWorldApp\matrix.gif";
+        private string filePath = @"..\..\matrix.gif";
         public PantallaInicio()
         {
             InitializeComponent();
