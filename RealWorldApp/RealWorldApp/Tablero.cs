@@ -28,6 +28,7 @@ namespace RealWorldApp
             dgvTablero.Rows.Add();
             dgvTablero.Rows[4].Height = 90;
             matrix = new RealWorldApp.Matrix(5);
+            progressBar1.Value = 0;
         }
 
 
@@ -42,25 +43,30 @@ namespace RealWorldApp
             dgvTablero.ClearSelection();
             int max_time = 20;
             int time = 1;
+            int cola = 0;
             do
             {
                 if (time % 1 == 0)
                 {
                     matrix.evaluatePercentages();
-                    matrix.update(dgvTablero);
+                    cola=matrix.update(dgvTablero);
+                    progressBar1.Value=200-cola;
                 }
                 if (time % 2 == 0)
                 {
                     matrix.actionSmith(richTextBox1,lblMuertes);
-                    matrix.update(dgvTablero);
+                    cola=matrix.update(dgvTablero);
+                    progressBar1.Value = 200 - cola;
                 }
 
                 if (time % 5 == 0)
                 {
-                    matrix.neoAction(richTextBox1);
-                    matrix.update(dgvTablero);
-                    matrix.swapNeo();
-                    matrix.update(dgvTablero);
+                    matrix.neoAction(richTextBox1,lblRes);
+                    cola=matrix.update(dgvTablero);
+                    progressBar1.Value = 200 - cola;
+                    matrix.swapNeo(richTextBox1);
+                    cola=matrix.update(dgvTablero);
+                    progressBar1.Value = 200 - cola;
                 }
 
 
@@ -89,6 +95,11 @@ namespace RealWorldApp
         }
 
         private void circularProgressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
         {
 
         }

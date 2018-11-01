@@ -15,6 +15,8 @@ namespace RealWorldApp
         private int n;
         private String text;
         private int kills;
+        private int resurrections;
+        private int cola;
         
 
         public Matrix(int n)
@@ -29,6 +31,8 @@ namespace RealWorldApp
                 queue.Enqueue(p);
             }
             this.kills = 0;
+            this.resurrections = 0;
+            this.cola = 0;
             putNeoSmith();
             putPersonages();
         }
@@ -67,6 +71,7 @@ namespace RealWorldApp
                 if (board[row, col] == null)
                 {
                     Personage p = queue.Dequeue();
+                    this.cola++;
                     board[row, col] = p;
                 }
             }
@@ -93,6 +98,7 @@ namespace RealWorldApp
                         if (queue.Count() > 0)
                         {
                             board[row, col] = queue.Dequeue();
+                            this.cola++;
                         }
                         else
                         {
@@ -129,6 +135,8 @@ namespace RealWorldApp
             Smith s = (Smith)board[c2.getX(), c2.getY()];
             s.setInfect(pathOpt.Count);
             smithKill(pathOpt, s.getInfect(),lblMuertes);
+            this.text += "Smith infect: " + s.getInfect() + "\n";
+            richText.Text = text;
             /*Console.WriteLine("Infect: "+s.getInfect() +" - Fin acción Smith");
             Console.WriteLine("===================================================================================");
             print();
@@ -213,7 +221,7 @@ namespace RealWorldApp
 
 
        
-        public void swapNeo(){
+        public void swapNeo(RichTextBox richText){
             int row, col;
             Cell c = whereIsNeo();
             row = Useful.random_Number(0, n);
@@ -221,10 +229,11 @@ namespace RealWorldApp
             Personage p = board[row, col];
             board[row, col] = board[c.getX(), c.getY()];
             board[c.getX(), c.getY()] = p;
-
+            this.text += "Neo's position has changed \n";
+            richText.Text = text;
             //Console.WriteLine("Neo cambia de posición");
         }
-        public void neoAction(RichTextBox richText)
+        public void neoAction(RichTextBox richText, Label lblRes)
         {
             Cell c=whereIsNeo();
             Neo neo = board[c.getX(), c.getY()] as Neo;
@@ -244,11 +253,14 @@ namespace RealWorldApp
                                 if (queue.Count > 0)
                                 {
                                     board[aux.getX(), aux.getY()] = queue.Dequeue();
+                                    this.cola++;
+                                    this.resurrections++;
                                 }
                             }
                         }
                     }
                 }
+                lblRes.Text = this.resurrections + "";
                 
                 /*Console.WriteLine("Fin acción Neo");
                 Console.WriteLine("===================================================================================");
@@ -352,7 +364,7 @@ namespace RealWorldApp
             return end;
         }
 
-        public void update(DataGridView dgv)
+        public int update(DataGridView dgv)
         {
             Cell cN = whereIsNeo();
             Cell cS = whereIsSmith();
@@ -407,9 +419,12 @@ namespace RealWorldApp
                 }
                 if (board[row, col] == null)
                 {
-                    dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\nulos.jpg");
+                    dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\muertes.png");
                 }
+
+               
             }
+            return cola;
         }
 
 

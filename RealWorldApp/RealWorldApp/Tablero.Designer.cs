@@ -42,8 +42,17 @@
             this.lblRes = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.circularProgressBar1 = new RealWorldApp.CircularProgressBar();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablero)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvTablero
@@ -80,7 +89,7 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(822, 174);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(169, 226);
+            this.richTextBox1.Size = new System.Drawing.Size(169, 161);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
@@ -133,20 +142,24 @@
             // lblMuertes
             // 
             this.lblMuertes.AutoSize = true;
-            this.lblMuertes.Location = new System.Drawing.Point(590, 89);
+            this.lblMuertes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblMuertes.Location = new System.Drawing.Point(592, 72);
             this.lblMuertes.Name = "lblMuertes";
-            this.lblMuertes.Size = new System.Drawing.Size(13, 13);
+            this.lblMuertes.Padding = new System.Windows.Forms.Padding(15);
+            this.lblMuertes.Size = new System.Drawing.Size(45, 45);
             this.lblMuertes.TabIndex = 6;
             this.lblMuertes.Text = "0";
             // 
             // lblRes
             // 
             this.lblRes.AutoSize = true;
-            this.lblRes.Location = new System.Drawing.Point(728, 89);
+            this.lblRes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblRes.Location = new System.Drawing.Point(729, 70);
             this.lblRes.Name = "lblRes";
-            this.lblRes.Size = new System.Drawing.Size(35, 13);
+            this.lblRes.Padding = new System.Windows.Forms.Padding(15);
+            this.lblRes.Size = new System.Drawing.Size(45, 45);
             this.lblRes.TabIndex = 7;
-            this.lblRes.Text = "label1";
+            this.lblRes.Text = "0";
             // 
             // label1
             // 
@@ -166,6 +179,64 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "NEO RESURRECTIONS:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(652, 186);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(27, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Neo";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(652, 251);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(33, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Smith";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(652, 322);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Generic";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::RealWorldApp.Properties.Resources.smith;
+            this.pictureBox2.Location = new System.Drawing.Point(582, 231);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(56, 49);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::RealWorldApp.Properties.Resources.neo;
+            this.pictureBox1.Location = new System.Drawing.Point(582, 162);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(810, 411);
+            this.progressBar1.Maximum = 200;
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.progressBar1.Size = new System.Drawing.Size(181, 23);
+            this.progressBar1.Step = 0;
+            this.progressBar1.TabIndex = 15;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            // 
             // circularProgressBar1
             // 
             this.circularProgressBar1.Font = new System.Drawing.Font("Segoe UI", 15F);
@@ -184,11 +255,27 @@
             this.circularProgressBar1.Value = ((long)(20));
             this.circularProgressBar1.Click += new System.EventHandler(this.circularProgressBar1_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(807, 386);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Queue:";
+            // 
             // Tablero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1003, 522);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblRes);
@@ -198,9 +285,12 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvTablero);
             this.Name = "Tablero";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Tablero";
             this.Load += new System.EventHandler(this.Tablero_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablero)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +313,12 @@
         private System.Windows.Forms.Label lblRes;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label6;
     }
 }
