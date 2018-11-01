@@ -14,9 +14,14 @@ namespace RealWorldApp
     public partial class Tablero : Form
     {
         private Matrix matrix;
+        private GifImage gifImage = null;
+        private string filePath = @"..\..\matrix.gif";
         public Tablero()
         {
             InitializeComponent();
+            gifImage = new GifImage(filePath);
+            gifImage.ReverseAtEnd = false;
+            pictureBox6.Image = gifImage.GetNextFrame();
             Shown += new EventHandler(Form1_Shown);
             backgroundWorker1.WorkerReportsProgress = true;
             backgroundWorker1.DoWork += new DoWorkEventHandler(backgroundWorker1_DoWork);

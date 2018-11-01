@@ -47,7 +47,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label6 = new System.Windows.Forms.Label();
-            this.circularProgressBar1 = new RealWorldApp.CircularProgressBar();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -55,12 +54,15 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.circularProgressBar1 = new RealWorldApp.CircularProgressBar();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablero)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvTablero
@@ -234,24 +236,6 @@
             this.label6.TabIndex = 16;
             this.label6.Text = "Queue:";
             // 
-            // circularProgressBar1
-            // 
-            this.circularProgressBar1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.circularProgressBar1.ForeColor = System.Drawing.Color.DimGray;
-            this.circularProgressBar1.LineColor = System.Drawing.Color.Silver;
-            this.circularProgressBar1.Location = new System.Drawing.Point(861, 12);
-            this.circularProgressBar1.Maximum = ((long)(20));
-            this.circularProgressBar1.MinimumSize = new System.Drawing.Size(100, 100);
-            this.circularProgressBar1.Name = "circularProgressBar1";
-            this.circularProgressBar1.ProgressColor1 = System.Drawing.Color.Orange;
-            this.circularProgressBar1.ProgressColor2 = System.Drawing.Color.Orange;
-            this.circularProgressBar1.ProgressShape = RealWorldApp.CircularProgressBar._ProgressShape.Flat;
-            this.circularProgressBar1.Size = new System.Drawing.Size(130, 130);
-            this.circularProgressBar1.TabIndex = 5;
-            this.circularProgressBar1.Text = "circularProgressBar1";
-            this.circularProgressBar1.Value = ((long)(20));
-            this.circularProgressBar1.Click += new System.EventHandler(this.circularProgressBar1_Click);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -320,6 +304,34 @@
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
+            // circularProgressBar1
+            // 
+            this.circularProgressBar1.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.circularProgressBar1.ForeColor = System.Drawing.Color.DimGray;
+            this.circularProgressBar1.LineColor = System.Drawing.Color.Silver;
+            this.circularProgressBar1.Location = new System.Drawing.Point(861, 12);
+            this.circularProgressBar1.Maximum = ((long)(20));
+            this.circularProgressBar1.MinimumSize = new System.Drawing.Size(100, 100);
+            this.circularProgressBar1.Name = "circularProgressBar1";
+            this.circularProgressBar1.ProgressColor1 = System.Drawing.Color.Orange;
+            this.circularProgressBar1.ProgressColor2 = System.Drawing.Color.Orange;
+            this.circularProgressBar1.ProgressShape = RealWorldApp.CircularProgressBar._ProgressShape.Flat;
+            this.circularProgressBar1.Size = new System.Drawing.Size(130, 130);
+            this.circularProgressBar1.TabIndex = 5;
+            this.circularProgressBar1.Text = "circularProgressBar1";
+            this.circularProgressBar1.Value = ((long)(20));
+            this.circularProgressBar1.Click += new System.EventHandler(this.circularProgressBar1_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(1003, 522);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 22;
+            this.pictureBox6.TabStop = false;
+            // 
             // Tablero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,6 +357,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvTablero);
+            this.Controls.Add(this.pictureBox6);
             this.Name = "Tablero";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Tablero";
@@ -355,6 +368,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -389,5 +403,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

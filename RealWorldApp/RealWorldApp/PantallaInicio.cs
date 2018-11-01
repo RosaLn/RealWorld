@@ -18,8 +18,10 @@ namespace RealWorldApp
         {
             InitializeComponent();
             gifImage = new GifImage(filePath);
-            gifImage.ReverseAtEnd = false; //dont reverse at end
+            gifImage.ReverseAtEnd = false; 
             pictureBox1.Image = gifImage.GetNextFrame();
+            System.Media.SoundPlayer sp = new System.Media.SoundPlayer("..\\..\\Matrix-Cancion1.wav");
+            sp.Play();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -36,6 +38,11 @@ namespace RealWorldApp
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void PantallaInicio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
