@@ -73,6 +73,16 @@ namespace RealWorldApp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap matrixGif {
+            get {
+                object obj = ResourceManager.GetObject("matrixGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap neo {
             get {
                 object obj = ResourceManager.GetObject("neo", resourceCulture);

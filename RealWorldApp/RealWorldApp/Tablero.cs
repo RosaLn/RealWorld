@@ -15,7 +15,7 @@ namespace RealWorldApp
     {
         private Matrix matrix;
         private GifImage gifImage = null;
-        private string filePath = @"..\..\matrix.gif";
+        private string filePath = @"..\..\matrixGif.gif";
         public Tablero()
         {
             InitializeComponent();
@@ -27,6 +27,16 @@ namespace RealWorldApp
             backgroundWorker1.DoWork += new DoWorkEventHandler(backgroundWorker1_DoWork);
             backgroundWorker1.ProgressChanged += new ProgressChangedEventHandler(backgroundWorker1_ProgressChanged);
 
+            lblRes.Parent = pictureBox6;
+            lblMuertes.Parent = pictureBox6;
+            label1.Parent = pictureBox6;
+            label2.Parent = pictureBox6;
+            label3.Parent = pictureBox6;
+            label4.Parent = pictureBox6;
+            label5.Parent = pictureBox6;
+            label6.Parent = pictureBox6;
+            label7.Parent = pictureBox6;
+            label8.Parent = pictureBox6;
             
 
             dgvTablero.Rows.Add();
@@ -57,12 +67,14 @@ namespace RealWorldApp
                 {
                     matrix.evaluatePercentages();
                     cola=matrix.update(dgvTablero);
+                    CheckForIllegalCrossThreadCalls = false;
                     progressBar1.Value=200-cola;
                 }
                 if (time % 2 == 0)
                 {
                     matrix.actionSmith(richTextBox1,lblMuertes);
                     cola=matrix.update(dgvTablero);
+                    CheckForIllegalCrossThreadCalls = false;
                     progressBar1.Value = 200 - cola;
                 }
 
@@ -70,6 +82,7 @@ namespace RealWorldApp
                 {
                     matrix.neoAction(richTextBox1,lblRes);
                     cola=matrix.update(dgvTablero);
+                    CheckForIllegalCrossThreadCalls = false;
                     progressBar1.Value = 200 - cola;
                     matrix.swapNeo(richTextBox1);
                     cola=matrix.update(dgvTablero);
@@ -124,6 +137,11 @@ namespace RealWorldApp
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

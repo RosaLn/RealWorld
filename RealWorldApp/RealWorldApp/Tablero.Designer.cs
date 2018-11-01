@@ -81,7 +81,7 @@
             this.Column4,
             this.Column5});
             this.dgvTablero.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgvTablero.Location = new System.Drawing.Point(12, 12);
+            this.dgvTablero.Location = new System.Drawing.Point(12, 33);
             this.dgvTablero.MultiSelect = false;
             this.dgvTablero.Name = "dgvTablero";
             this.dgvTablero.ReadOnly = true;
@@ -139,7 +139,7 @@
             // button1
             // 
             this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(822, 487);
+            this.button1.Location = new System.Drawing.Point(822, 484);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -158,69 +158,90 @@
             // lblMuertes
             // 
             this.lblMuertes.AutoSize = true;
+            this.lblMuertes.BackColor = System.Drawing.Color.Transparent;
             this.lblMuertes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblMuertes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMuertes.ForeColor = System.Drawing.Color.Magenta;
             this.lblMuertes.Location = new System.Drawing.Point(592, 72);
             this.lblMuertes.Name = "lblMuertes";
             this.lblMuertes.Padding = new System.Windows.Forms.Padding(15);
-            this.lblMuertes.Size = new System.Drawing.Size(45, 45);
+            this.lblMuertes.Size = new System.Drawing.Size(53, 56);
             this.lblMuertes.TabIndex = 6;
             this.lblMuertes.Text = "0";
             // 
             // lblRes
             // 
             this.lblRes.AutoSize = true;
+            this.lblRes.BackColor = System.Drawing.Color.Transparent;
             this.lblRes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRes.ForeColor = System.Drawing.Color.Magenta;
             this.lblRes.Location = new System.Drawing.Point(729, 70);
             this.lblRes.Name = "lblRes";
             this.lblRes.Padding = new System.Windows.Forms.Padding(15);
-            this.lblRes.Size = new System.Drawing.Size(45, 45);
+            this.lblRes.Size = new System.Drawing.Size(53, 56);
             this.lblRes.TabIndex = 7;
             this.lblRes.Text = "0";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(578, 42);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Magenta;
+            this.label1.Location = new System.Drawing.Point(589, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.Size = new System.Drawing.Size(59, 32);
             this.label1.TabIndex = 8;
-            this.label1.Text = "SMITH KILLS:";
+            this.label1.Text = "SMITH \r\n KILLS:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(686, 42);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Magenta;
+            this.label2.Location = new System.Drawing.Point(686, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 13);
+            this.label2.Size = new System.Drawing.Size(142, 32);
             this.label2.TabIndex = 9;
-            this.label2.Text = "NEO RESURRECTIONS:";
+            this.label2.Text = "            NEO \r\nRESURRECTIONS:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(652, 157);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Magenta;
+            this.label3.Location = new System.Drawing.Point(628, 204);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(27, 13);
+            this.label3.Size = new System.Drawing.Size(49, 24);
             this.label3.TabIndex = 10;
             this.label3.Text = "Neo";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(652, 222);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Magenta;
+            this.label4.Location = new System.Drawing.Point(628, 259);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 13);
+            this.label4.Size = new System.Drawing.Size(62, 24);
             this.label4.TabIndex = 11;
             this.label4.Text = "Smith";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(652, 293);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Magenta;
+            this.label5.Location = new System.Drawing.Point(627, 320);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 13);
+            this.label5.Size = new System.Drawing.Size(146, 24);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Generic <30%";
+            this.label5.Text = "Generic < 30%";
             // 
             // progressBar1
             // 
@@ -236,27 +257,36 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(886, 395);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Magenta;
+            this.label6.Location = new System.Drawing.Point(818, 388);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 13);
+            this.label6.Size = new System.Drawing.Size(67, 20);
             this.label6.TabIndex = 16;
             this.label6.Text = "Queue:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(652, 357);
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Magenta;
+            this.label7.Location = new System.Drawing.Point(628, 361);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(155, 13);
+            this.label7.Size = new System.Drawing.Size(176, 48);
             this.label7.TabIndex = 17;
-            this.label7.Text = "Generic between 30% and 50%";
+            this.label7.Text = "Generic between \r\n30% and 50%";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(665, 423);
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Magenta;
+            this.label8.Location = new System.Drawing.Point(627, 430);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(73, 13);
+            this.label8.Size = new System.Drawing.Size(140, 24);
             this.label8.TabIndex = 18;
             this.label8.Text = "Generic >50%";
             // 
@@ -266,7 +296,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(916, 487);
+            this.button2.Location = new System.Drawing.Point(916, 484);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 23;
@@ -277,9 +307,9 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::RealWorldApp.Properties.Resources.Trump3;
-            this.pictureBox5.Location = new System.Drawing.Point(581, 409);
+            this.pictureBox5.Location = new System.Drawing.Point(572, 415);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(57, 50);
+            this.pictureBox5.Size = new System.Drawing.Size(50, 50);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 21;
             this.pictureBox5.TabStop = false;
@@ -287,9 +317,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::RealWorldApp.Properties.Resources.Trump2;
-            this.pictureBox4.Location = new System.Drawing.Point(582, 340);
+            this.pictureBox4.Location = new System.Drawing.Point(572, 359);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(55, 50);
+            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 20;
             this.pictureBox4.TabStop = false;
@@ -297,9 +327,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::RealWorldApp.Properties.Resources.Trump1;
-            this.pictureBox3.Location = new System.Drawing.Point(582, 273);
+            this.pictureBox3.Location = new System.Drawing.Point(572, 303);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(56, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
@@ -307,9 +337,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::RealWorldApp.Properties.Resources.smith;
-            this.pictureBox2.Location = new System.Drawing.Point(582, 202);
+            this.pictureBox2.Location = new System.Drawing.Point(572, 247);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(56, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
@@ -317,9 +347,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::RealWorldApp.Properties.Resources.neo2;
-            this.pictureBox1.Location = new System.Drawing.Point(582, 133);
+            this.pictureBox1.Location = new System.Drawing.Point(572, 191);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(55, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
@@ -329,15 +359,17 @@
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox6.Location = new System.Drawing.Point(0, 0);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(1003, 522);
+            this.pictureBox6.Size = new System.Drawing.Size(1003, 512);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 22;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // circularProgressBar1
             // 
+            this.circularProgressBar1.BackColor = System.Drawing.SystemColors.Control;
             this.circularProgressBar1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.circularProgressBar1.ForeColor = System.Drawing.Color.DimGray;
+            this.circularProgressBar1.ForeColor = System.Drawing.Color.Black;
             this.circularProgressBar1.LineColor = System.Drawing.Color.Silver;
             this.circularProgressBar1.Location = new System.Drawing.Point(861, 12);
             this.circularProgressBar1.Maximum = ((long)(20));
@@ -356,7 +388,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1003, 522);
+            this.ClientSize = new System.Drawing.Size(1003, 512);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
