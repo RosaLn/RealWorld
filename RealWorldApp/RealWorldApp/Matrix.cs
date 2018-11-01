@@ -369,7 +369,7 @@ namespace RealWorldApp
             Cell cN = whereIsNeo();
             Cell cS = whereIsSmith();
            // dgv.Rows[cN.getX()].Cells[cN.getY()].Style.BackColor = System.Drawing.Color.BlueViolet;
-            dgv.Rows[cN.getX()].Cells[cN.getY()].Value = Image.FromFile("..\\..\\neo.png");
+            dgv.Rows[cN.getX()].Cells[cN.getY()].Value = Image.FromFile("..\\..\\neo2.png");
 
             dgv.Rows[cS.getX()].Cells[cS.getY()].Style.BackColor = System.Drawing.Color.LightSkyBlue;
             dgv.Rows[cS.getX()].Cells[cS.getY()].Value = Image.FromFile("..\\..\\smith.png");
@@ -383,39 +383,23 @@ namespace RealWorldApp
                 {
                     Personage p = board[row, col];
                     int die = p.getPercentageDie();
-                    dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\genericos.png");
-                    /*if (die <= 10)
+                    if (die <= 30)
                     {
-                        dgv.Rows[row].Cells[col].Style.BackColor = System.Drawing.Color.FromArgb(245, 177, 189);
+                        dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\Trump1.png");
                     }
-                    else if (die > 10 && die <= 20)
+                    else if (die > 30 && die <= 50)
                     {
-                        dgv.Rows[row].Cells[col].Style.BackColor = System.Drawing.Color.FromArgb(235, 86, 113);
+                        dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\Trump2.png");
                     }
-                    else if (die > 20 && die <= 30)
+                    else if (die > 50 && die <= 70)
                     {
-                        dgv.Rows[row].Cells[col].Style.BackColor = System.Drawing.Color.FromArgb(230, 38, 72);
-                    }
-                    else if (die > 30 && die <= 40)
-                    {
-                        dgv.Rows[row].Cells[col].Style.BackColor = System.Drawing.Color.FromArgb(233, 189, 51);
-                    }
-                    else if (die > 40 && die <= 50)
-                    {
-                        dgv.Rows[row].Cells[col].Style.BackColor = System.Drawing.Color.FromArgb(148, 18, 40);
-                    }
-                    else if (die > 50 && die <= 60)
-                    {
-                        dgv.Rows[row].Cells[col].Style.BackColor = System.Drawing.Color.FromArgb(108, 13, 30);
-                    }
-                    else if (die > 60 && die <= 70)
-                    {
-                        dgv.Rows[row].Cells[col].Style.BackColor = System.Drawing.Color.FromArgb(77, 9, 20);
+                        dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\Trump3.png");
                     }
                     else
                     {
-                        dgv.Rows[row].Cells[col].Style.BackColor = System.Drawing.Color.FromArgb(38, 4, 11);
-                    }*/
+                        dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\Trump3.png");
+                    }
+                    
                 }
                 if (board[row, col] == null)
                 {
