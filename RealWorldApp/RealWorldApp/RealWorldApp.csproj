@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cell.cs" />
+    <Compile Include="CircularProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="InterfaceGenerate.cs" />
     <Compile Include="Matrix.cs" />
     <Compile Include="Neo.cs" />

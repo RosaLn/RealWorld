@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -348,8 +349,11 @@ namespace RealWorldApp
         {
             Cell cN = whereIsNeo();
             Cell cS = whereIsSmith();
-            dgv.Rows[cN.getX()].Cells[cN.getY()].Style.BackColor = System.Drawing.Color.BlueViolet;
+           // dgv.Rows[cN.getX()].Cells[cN.getY()].Style.BackColor = System.Drawing.Color.BlueViolet;
+            dgv.Rows[cN.getX()].Cells[cN.getY()].Value = Image.FromFile("..\\..\\neo.png");
+
             dgv.Rows[cS.getX()].Cells[cS.getY()].Style.BackColor = System.Drawing.Color.LightSkyBlue;
+            dgv.Rows[cS.getX()].Cells[cS.getY()].Value = Image.FromFile("..\\..\\smith.png");
             int row, col;
             for (int i = 0; i < this.n * this.n; i++)
             {
@@ -360,7 +364,8 @@ namespace RealWorldApp
                 {
                     Personage p = board[row, col];
                     int die = p.getPercentageDie();
-                    if (die <= 10)
+                    dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\genericos.png");
+                    /*if (die <= 10)
                     {
                         dgv.Rows[row].Cells[col].Style.BackColor = System.Drawing.Color.FromArgb(245, 177, 189);
                     }
@@ -391,11 +396,11 @@ namespace RealWorldApp
                     else
                     {
                         dgv.Rows[row].Cells[col].Style.BackColor = System.Drawing.Color.FromArgb(38, 4, 11);
-                    }
+                    }*/
                 }
                 if (board[row, col] == null)
                 {
-                    dgv.Rows[row].Cells[col].Style.BackColor = System.Drawing.Color.Black;
+                    dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\nulos.jpg");
                 }
             }
         }

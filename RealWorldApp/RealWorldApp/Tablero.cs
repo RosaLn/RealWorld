@@ -20,7 +20,7 @@ namespace RealWorldApp
             Shown += new EventHandler(Form1_Shown);
             backgroundWorker1.WorkerReportsProgress = true;
             backgroundWorker1.DoWork += new DoWorkEventHandler(backgroundWorker1_DoWork);
-            //backgroundWorker1.ProgressChanged += new ProgressChangedEventHandler(backgroundWorker1_ProgressChanged);
+            backgroundWorker1.ProgressChanged += new ProgressChangedEventHandler(backgroundWorker1_ProgressChanged);
 
             dgvTablero.Rows.Add();
             dgvTablero.Rows.Add();
@@ -63,6 +63,8 @@ namespace RealWorldApp
                     matrix.update(dgvTablero);
                 }
 
+
+                backgroundWorker1.ReportProgress(time);
                 Thread.Sleep(1000);
                 time += 1;
 
@@ -70,7 +72,23 @@ namespace RealWorldApp
 
         }
 
+        void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            // The progress percentage is a property of e
+            circularProgressBar1.Value = e.ProgressPercentage;
+        }
+
         private void Tablero_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void circularProgressBar1_Click(object sender, EventArgs e)
         {
 
         }
