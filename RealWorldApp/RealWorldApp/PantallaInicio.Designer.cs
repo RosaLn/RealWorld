@@ -98,8 +98,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnIniciar;
     }
 }
 
