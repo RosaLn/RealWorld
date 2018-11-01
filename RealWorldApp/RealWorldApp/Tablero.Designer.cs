@@ -38,6 +38,10 @@
             this.Column4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.lblMuertes = new System.Windows.Forms.Label();
+            this.lblRes = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.circularProgressBar1 = new RealWorldApp.CircularProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablero)).BeginInit();
             this.SuspendLayout();
@@ -126,6 +130,42 @@
             this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
+            // lblMuertes
+            // 
+            this.lblMuertes.AutoSize = true;
+            this.lblMuertes.Location = new System.Drawing.Point(590, 89);
+            this.lblMuertes.Name = "lblMuertes";
+            this.lblMuertes.Size = new System.Drawing.Size(13, 13);
+            this.lblMuertes.TabIndex = 6;
+            this.lblMuertes.Text = "0";
+            // 
+            // lblRes
+            // 
+            this.lblRes.AutoSize = true;
+            this.lblRes.Location = new System.Drawing.Point(728, 89);
+            this.lblRes.Name = "lblRes";
+            this.lblRes.Size = new System.Drawing.Size(35, 13);
+            this.lblRes.TabIndex = 7;
+            this.lblRes.Text = "label1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(578, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "SMITH KILLS:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(686, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(129, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "NEO RESURRECTIONS:";
+            // 
             // circularProgressBar1
             // 
             this.circularProgressBar1.Font = new System.Drawing.Font("Segoe UI", 15F);
@@ -149,6 +189,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1003, 522);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblRes);
+            this.Controls.Add(this.lblMuertes);
             this.Controls.Add(this.circularProgressBar1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button1);
@@ -158,6 +202,7 @@
             this.Load += new System.EventHandler(this.Tablero_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablero)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -174,5 +219,9 @@
         private System.Windows.Forms.DataGridViewImageColumn Column5;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private CircularProgressBar circularProgressBar1;
+        private System.Windows.Forms.Label lblMuertes;
+        private System.Windows.Forms.Label lblRes;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

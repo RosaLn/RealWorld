@@ -13,6 +13,8 @@ namespace RealWorldApp
         private Personage[,] board;
         private Queue<Personage> queue;
         private int n;
+        private String text;
+        private int kills;
         
 
         public Matrix(int n)
@@ -26,7 +28,7 @@ namespace RealWorldApp
                 Personage p = new Personage();
                 queue.Enqueue(p);
             }
-            
+            this.kills = 0;
             putNeoSmith();
             putPersonages();
         }
@@ -107,7 +109,7 @@ namespace RealWorldApp
         }
         
 
-        public void actionSmith()
+        public void actionSmith(RichTextBox richText, Label lblMuertes)
         {
             List<Cell> pathOpt;
             List<Cell> path;
@@ -126,14 +128,14 @@ namespace RealWorldApp
             Cell c2 = whereIsSmith();
             Smith s = (Smith)board[c2.getX(), c2.getY()];
             s.setInfect(pathOpt.Count);
-            smithKill(pathOpt, s.getInfect());
+            smithKill(pathOpt, s.getInfect(),lblMuertes);
             /*Console.WriteLine("Infect: "+s.getInfect() +" - Fin acción Smith");
             Console.WriteLine("===================================================================================");
             print();
             Console.WriteLine("===================================================================================");*/
         }
 
-        public void smithKill(List<Cell> pathOpt,int infect)
+        public void smithKill(List<Cell> pathOpt, int infect, Label lblMuertes)
         {
             for(int i = 0, cont=0; i < pathOpt.Count - 1 && cont<infect;i++)
             {
@@ -143,7 +145,9 @@ namespace RealWorldApp
                     board[c.getX(), c.getY()].setPercentage(100);
                     board[c.getX(), c.getY()] = null;
                     cont++;
+                    kills++;
                 }
+                lblMuertes.Text = kills+"";
             }
         }
         
@@ -220,13 +224,14 @@ namespace RealWorldApp
 
             //Console.WriteLine("Neo cambia de posición");
         }
-        public void neoAction()
+        public void neoAction(RichTextBox richText)
         {
             Cell c=whereIsNeo();
             Neo neo = board[c.getX(), c.getY()] as Neo;
             neo.setBeliever();
             if (neo.isBeliever())
             {
+                this.text+="Neo is believer \n";
                 for (int i = -1; i <= 1; i++)
                 {
                     for (int j = -1; j <= 1; j++)
@@ -252,6 +257,8 @@ namespace RealWorldApp
             }
             else
             {
+                this.text+= "Neo is not believer \n";
+                richText.Text = text;
                 //Console.WriteLine("Neo no es el elegido");
             }
 

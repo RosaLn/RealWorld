@@ -51,13 +51,13 @@ namespace RealWorldApp
                 }
                 if (time % 2 == 0)
                 {
-                    matrix.actionSmith();
+                    matrix.actionSmith(richTextBox1,lblMuertes);
                     matrix.update(dgvTablero);
                 }
 
                 if (time % 5 == 0)
                 {
-                    matrix.neoAction();
+                    matrix.neoAction(richTextBox1);
                     matrix.update(dgvTablero);
                     matrix.swapNeo();
                     matrix.update(dgvTablero);
