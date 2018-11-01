@@ -27,6 +27,8 @@ namespace RealWorldApp
             backgroundWorker1.DoWork += new DoWorkEventHandler(backgroundWorker1_DoWork);
             backgroundWorker1.ProgressChanged += new ProgressChangedEventHandler(backgroundWorker1_ProgressChanged);
 
+            
+
             dgvTablero.Rows.Add();
             dgvTablero.Rows.Add();
             dgvTablero.Rows.Add();
@@ -81,6 +83,8 @@ namespace RealWorldApp
 
             } while (time <= max_time || matrix.isEnd());
 
+            button1.Enabled = true;
+            
         }
 
         void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
@@ -97,6 +101,8 @@ namespace RealWorldApp
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+            Final final = new RealWorldApp.Final();
+            final.Show();
         }
 
         private void circularProgressBar1_Click(object sender, EventArgs e)
@@ -107,6 +113,17 @@ namespace RealWorldApp
         private void progressBar1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        
+
+        private void backgroundWorker3_DoWork(object sender, DoWorkEventArgs e)
+        {
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -63,6 +63,16 @@ namespace RealWorldApp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap azul {
+            get {
+                object obj = ResourceManager.GetObject("azul", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap neo {
             get {
                 object obj = ResourceManager.GetObject("neo", resourceCulture);
@@ -76,6 +86,46 @@ namespace RealWorldApp.Properties {
         internal static System.Drawing.Bitmap neo2 {
             get {
                 object obj = ResourceManager.GetObject("neo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pastillaazul {
+            get {
+                object obj = ResourceManager.GetObject("Pastillaazul", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pastillaroja {
+            get {
+                object obj = ResourceManager.GetObject("pastillaroja", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pastillas {
+            get {
+                object obj = ResourceManager.GetObject("pastillas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rojo {
+            get {
+                object obj = ResourceManager.GetObject("rojo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +166,16 @@ namespace RealWorldApp.Properties {
         internal static System.Drawing.Bitmap Trump3 {
             get {
                 object obj = ResourceManager.GetObject("Trump3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vacio {
+            get {
+                object obj = ResourceManager.GetObject("vacio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
