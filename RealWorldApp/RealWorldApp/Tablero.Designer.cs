@@ -70,6 +70,8 @@
             // dgvTablero
             // 
             this.dgvTablero.AllowUserToDeleteRows = false;
+            this.dgvTablero.AllowUserToResizeColumns = false;
+            this.dgvTablero.AllowUserToResizeRows = false;
             this.dgvTablero.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTablero.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvTablero.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -138,6 +140,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Enabled = false;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
@@ -154,6 +157,7 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.richTextBox1.BackColor = System.Drawing.SystemColors.MenuText;
             this.richTextBox1.ForeColor = System.Drawing.Color.Lime;
             this.richTextBox1.Location = new System.Drawing.Point(822, 171);
@@ -252,6 +256,7 @@
             // 
             // progressBar1
             // 
+            this.progressBar1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.progressBar1.Location = new System.Drawing.Point(822, 408);
             this.progressBar1.Maximum = 200;
             this.progressBar1.Name = "progressBar1";
@@ -263,6 +268,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Black;
             this.label6.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -303,6 +309,7 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -379,6 +386,7 @@
             // 
             // circularProgressBar1
             // 
+            this.circularProgressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.circularProgressBar1.BackColor = System.Drawing.SystemColors.Desktop;
             this.circularProgressBar1.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.circularProgressBar1.ForeColor = System.Drawing.Color.Lime;
