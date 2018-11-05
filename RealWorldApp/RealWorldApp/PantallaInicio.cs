@@ -42,12 +42,9 @@ namespace RealWorldApp
 
         private void PantallaInicio_Load(object sender, EventArgs e)
         {
-
+            CenterToParent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
     }
 }

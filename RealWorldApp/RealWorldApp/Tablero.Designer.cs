@@ -72,6 +72,7 @@
             this.dgvTablero.AllowUserToDeleteRows = false;
             this.dgvTablero.AllowUserToResizeColumns = false;
             this.dgvTablero.AllowUserToResizeRows = false;
+            this.dgvTablero.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgvTablero.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTablero.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvTablero.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -88,8 +89,8 @@
             this.dgvTablero.Name = "dgvTablero";
             this.dgvTablero.ReadOnly = true;
             this.dgvTablero.RowHeadersVisible = false;
-            this.dgvTablero.RowTemplate.Height = 90;
-            this.dgvTablero.Size = new System.Drawing.Size(544, 453);
+            this.dgvTablero.RowTemplate.Height = 107;
+            this.dgvTablero.Size = new System.Drawing.Size(540, 540);
             this.dgvTablero.TabIndex = 0;
             // 
             // Column1
@@ -147,7 +148,7 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(822, 481);
+            this.button1.Location = new System.Drawing.Point(848, 586);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -160,7 +161,7 @@
             this.richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.richTextBox1.BackColor = System.Drawing.SystemColors.MenuText;
             this.richTextBox1.ForeColor = System.Drawing.Color.Lime;
-            this.richTextBox1.Location = new System.Drawing.Point(822, 171);
+            this.richTextBox1.Location = new System.Drawing.Point(848, 223);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(169, 161);
             this.richTextBox1.TabIndex = 3;
@@ -168,6 +169,7 @@
             // 
             // lblMuertes
             // 
+            this.lblMuertes.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblMuertes.AutoSize = true;
             this.lblMuertes.BackColor = System.Drawing.Color.Black;
             this.lblMuertes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -182,6 +184,7 @@
             // 
             // lblRes
             // 
+            this.lblRes.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblRes.AutoSize = true;
             this.lblRes.BackColor = System.Drawing.Color.Black;
             this.lblRes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -196,6 +199,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -208,6 +212,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -220,6 +225,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -232,6 +238,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Black;
             this.label4.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -244,6 +251,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -257,7 +265,7 @@
             // progressBar1
             // 
             this.progressBar1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.progressBar1.Location = new System.Drawing.Point(822, 408);
+            this.progressBar1.Location = new System.Drawing.Point(848, 460);
             this.progressBar1.Maximum = 200;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -273,7 +281,7 @@
             this.label6.BackColor = System.Drawing.Color.Black;
             this.label6.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Lime;
-            this.label6.Location = new System.Drawing.Point(818, 385);
+            this.label6.Location = new System.Drawing.Point(844, 437);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 19);
             this.label6.TabIndex = 16;
@@ -281,6 +289,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Black;
             this.label7.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -293,6 +302,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Black;
             this.label8.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -315,7 +325,7 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Lime;
-            this.button2.Location = new System.Drawing.Point(916, 481);
+            this.button2.Location = new System.Drawing.Point(942, 586);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 23;
@@ -325,6 +335,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox5.Image = global::RealWorldApp.Properties.Resources.Trump3;
             this.pictureBox5.Location = new System.Drawing.Point(576, 445);
             this.pictureBox5.Name = "pictureBox5";
@@ -335,6 +346,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox4.Image = global::RealWorldApp.Properties.Resources.Trump2;
             this.pictureBox4.Location = new System.Drawing.Point(577, 386);
             this.pictureBox4.Name = "pictureBox4";
@@ -345,6 +357,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.Image = global::RealWorldApp.Properties.Resources.Trump1;
             this.pictureBox3.Location = new System.Drawing.Point(577, 330);
             this.pictureBox3.Name = "pictureBox3";
@@ -355,6 +368,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.Image = global::RealWorldApp.Properties.Resources.smith;
             this.pictureBox2.Location = new System.Drawing.Point(577, 277);
             this.pictureBox2.Name = "pictureBox2";
@@ -365,6 +379,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = global::RealWorldApp.Properties.Resources.neo2;
             this.pictureBox1.Location = new System.Drawing.Point(577, 223);
             this.pictureBox1.Name = "pictureBox1";
@@ -378,7 +393,7 @@
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox6.Location = new System.Drawing.Point(0, 0);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(1003, 512);
+            this.pictureBox6.Size = new System.Drawing.Size(1029, 617);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 22;
             this.pictureBox6.TabStop = false;
@@ -391,7 +406,7 @@
             this.circularProgressBar1.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.circularProgressBar1.ForeColor = System.Drawing.Color.Lime;
             this.circularProgressBar1.LineColor = System.Drawing.Color.Silver;
-            this.circularProgressBar1.Location = new System.Drawing.Point(861, 9);
+            this.circularProgressBar1.Location = new System.Drawing.Point(887, 9);
             this.circularProgressBar1.Maximum = ((long)(20));
             this.circularProgressBar1.MinimumSize = new System.Drawing.Size(100, 100);
             this.circularProgressBar1.Name = "circularProgressBar1";
@@ -408,7 +423,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1003, 512);
+            this.ClientSize = new System.Drawing.Size(1029, 617);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -433,7 +448,7 @@
             this.Controls.Add(this.pictureBox6);
             this.Name = "Tablero";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "Tablero";
+            this.Text = "Game";
             this.Load += new System.EventHandler(this.Tablero_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablero)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

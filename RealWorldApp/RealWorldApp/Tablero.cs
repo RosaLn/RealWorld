@@ -43,7 +43,7 @@ namespace RealWorldApp
             dgvTablero.Rows.Add();
             dgvTablero.Rows.Add();
             dgvTablero.Rows.Add();
-            dgvTablero.Rows[4].Height = 90;
+            dgvTablero.Rows[4].Height = 107;
             matrix = new RealWorldApp.Matrix(5);
             progressBar1.Value = 0;
         }
@@ -95,7 +95,7 @@ namespace RealWorldApp
                 time += 1;
 
             } while (time <= max_time || matrix.isEnd());
-
+            
             button1.Enabled = true;
             
         }
@@ -108,7 +108,7 @@ namespace RealWorldApp
 
         private void Tablero_Load(object sender, EventArgs e)
         {
-
+            CenterToParent();
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -36,24 +36,24 @@
             // 
             // btnIniciar
             // 
-            this.btnIniciar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnIniciar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnIniciar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnIniciar.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnIniciar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciar.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnIniciar.Location = new System.Drawing.Point(12, 334);
+            this.btnIniciar.Location = new System.Drawing.Point(156, 293);
             this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(243, 23);
+            this.btnIniciar.Size = new System.Drawing.Size(255, 23);
             this.btnIniciar.TabIndex = 1;
-            this.btnIniciar.Text = "Iniciar Juego";
+            this.btnIniciar.Text = "Start Game";
             this.btnIniciar.UseVisualStyleBackColor = false;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // btnSalir
             // 
-            this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnSalir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSalir.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnSalir.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
@@ -61,11 +61,11 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnSalir.Location = new System.Drawing.Point(295, 334);
+            this.btnSalir.Location = new System.Drawing.Point(156, 334);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(255, 23);
             this.btnSalir.TabIndex = 2;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Text = "Close";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
@@ -89,7 +89,7 @@
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.pictureBox1);
             this.Name = "PantallaInicio";
-            this.Text = "Form1";
+            this.Text = "RealWorld";
             this.Load += new System.EventHandler(this.PantallaInicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
