@@ -382,28 +382,39 @@ namespace RealWorldApp
                 if (!(board[row, col] is Neo) && !(board[row, col] is Smith) && board[row, col] != null)
                 {
                     Personage p = board[row, col];
-                    int die = p.getPercentageDie();
-                    if (die <= 30)
+                    String nombre = p.getName();
+                    switch (nombre)
                     {
-                        dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\Trump1.png");
-                    }
-                    else if (die > 30 && die <= 50)
-                    {
-                        dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\Trump2.png");
-                    }
-                    else if (die > 50 && die <= 70)
-                    {
-                        dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\Trump3.png");
-                    }
-                    else
-                    {
-                        dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\Trump3.png");
+                        case "Michelle":
+                            dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\merkel.png");
+                            break;
+                        case "Caroline":
+                            dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\aguirre.png");
+                            break;
+                        case "Claire":
+                            dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\reina.png");
+                            break;
+                        case "Jessica":
+                            dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\esteban.png");
+                            break;
+                        case "Alexander":
+                            dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\bin.png");
+                            break;
+                        case "James":
+                            dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\putin.png");
+                            break;
+                        case "Erik":
+                            dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\trump3.png");
+                            break;
+                        case "Mike":
+                            dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\kim.png");
+                            break;
                     }
                     
                 }
                 if (board[row, col] == null)
                 {
-                    dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\muertes.png");
+                    dgv.Rows[row].Cells[col].Value = Image.FromFile("..\\..\\muerte.png");
                 }
 
                

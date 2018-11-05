@@ -39,8 +39,8 @@ namespace RealWorldApp
             }
         }
 
-        protected static readonly String[] names = { "Michelle ", "Alexander",
-            "James   ", "Caroline ", "Claire   ", "Jessica  ", "Erik     ", "Mike     " };
+        protected static readonly String[] names = { "Michelle", "Alexander",
+            "James", "Caroline", "Claire", "Jessica", "Erik", "Mike" };
         protected String name;
         protected Location location;
         protected int age;

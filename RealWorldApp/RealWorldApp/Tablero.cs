@@ -16,12 +16,17 @@ namespace RealWorldApp
         private Matrix matrix;
         private GifImage gifImage = null;
         private string filePath = @"..\..\matrixGif.gif";
+        private GifImage gifImage2 = null;
+        private string filePath2 = @"..\..\generics.gif";
         public Tablero()
         {
             InitializeComponent();
             gifImage = new GifImage(filePath);
             gifImage.ReverseAtEnd = false;
             pictureBox6.Image = gifImage.GetNextFrame();
+            gifImage2 = new GifImage(filePath2);
+            gifImage2.ReverseAtEnd = false;
+            pictureBox3.Image = gifImage2.GetNextFrame();
             Shown += new EventHandler(Form1_Shown);
             backgroundWorker1.WorkerReportsProgress = true;
             backgroundWorker1.DoWork += new DoWorkEventHandler(backgroundWorker1_DoWork);
@@ -33,10 +38,6 @@ namespace RealWorldApp
             label2.Parent = pictureBox6;
             label3.Parent = pictureBox6;
             label4.Parent = pictureBox6;
-            label5.Parent = pictureBox6;
-            label6.Parent = pictureBox6;
-            label7.Parent = pictureBox6;
-            label8.Parent = pictureBox6;
             
 
             dgvTablero.Rows.Add();
